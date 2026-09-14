@@ -1,4 +1,4 @@
-﻿namespace _0914teszteles
+﻿namespace VendingMachine
 {
     internal class Program
     {
