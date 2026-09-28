@@ -21,14 +21,21 @@ namespace VendingMachine
             _MonthlyPrice = monthlyPrice;
             _months = months;
         }
-        public int TotalCost(Member mem)
+        public int TotalCost()
         {
-            if (mem.isStudent)
+            if (_Owner.isStudent)
             {
-                
+                return _MonthlyPrice * _months * 100 / 80;
             }
-            return _MonthlyPrice + _months;
-           
+            return (MonthlyPrice * Months);
+        }
+        public void Extend(int month)
+        {
+            _months += month;
+        }
+        public int PricePerVisit()
+        {
+            return M
         }
     }
 }

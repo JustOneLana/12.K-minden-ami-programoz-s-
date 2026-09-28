@@ -39,6 +39,11 @@
             Console.WriteLine(Marika.Describe());
             Console.WriteLine(Béla.Describe());
 
+            Membership JózsiBérlet = new Membership(Józsi, 6000, 4);
+            Membership MarikaBérlet = new Membership(Marika, 6000, 7);
+            Console.WriteLine(JózsiBérlet.TotalCost());
+            Console.WriteLine(MarikaBérlet.TotalCost());
+            JózsiBérlet.Extend(2);
         }
     }
 }
